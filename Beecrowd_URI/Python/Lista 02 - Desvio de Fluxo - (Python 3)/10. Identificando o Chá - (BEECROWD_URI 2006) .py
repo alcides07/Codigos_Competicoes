@@ -1,0 +1,26 @@
+T = int(input()) #INDICA O TIPO DE CHÁ
+A, B, C, D, E = map(int, input().split()) #AS 5 LETRAS INDICAM AS RESPOSTAS DADAS POR CADA COMPETIDOR
+acertaram = 0
+
+if (A == T): #SE A PRIMEIRA RESPOSTA É IGUAL AO TIPO DE CHÁ EM QUESTÃO
+    acertaram += 1 #QUER DIZER QUE MAIS UMA PESSOA ACERTOU. ENTÃO A QUANTIDADE DE ACERTOS É IGUAL A QUANTIDADE DE ACERTOS QUE SE TINHA ANTES, ACRESCENTADO DO ACERTO ATUAL.
+ 
+if (B == T): #SE A SEGUNDA RESPOSTA É IGUAL AO TIPO DE CHÁ EM QUESTÃO
+    acertaram += 1
+
+if (C == T): #SE A TERCEIRA RESPOSTA É IGUAL AO TIPO DE CHÁ EM QUESTÃO
+    acertaram += 1
+
+if (D == T): #SE A QUARTA RESPOSTA É IGUAL AO TIPO DE CHÁ EM QUESTÃO
+    acertaram += 1
+
+if (E == T): #SE A QUINTA RESPOSTA É IGUAL AO TIPO DE CHÁ EM QUESTÃO
+    acertaram += 1
+
+if(T >= 1 and T <= 4): #SE O NÚMERO DIGITADO ESTÁ DENTRO DO INTERVALO DOS CHÁS EXISTENTES NA COMPETIÇÃO
+    if(A >= 1 and A <= 4  
+    and B >= 1 and B <= 4
+    and C >= 1 and C <= 4 #VERIFICANDO SE A RESPOSTA DE CADA COMPETIDOR (A -> E) ESTÁ DENTRO DO INTERVALO DOS CHÁS EXISTENTES NA COMPETIÇÃO
+    and D >= 1 and D <= 4
+    and E >= 1 and E <= 4):
+        print(acertaram)
